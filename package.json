@@ -1,5 +1,5 @@
 {
-    "name": "prettier-reasonml",
+    "name": "prettier-plugin-reasonml",
     "version": "0.1.0",
     "main": "src",
     "license": "MIT",
