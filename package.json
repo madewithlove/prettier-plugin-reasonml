@@ -1,16 +1,22 @@
 {
-  "name": "prettier-reasonml",
-  "version": "0.1.0",
-  "main": "src",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^23.6.0",
-    "prettier": "^1.15.3",
-    "reason": "^3.3.4"
-  },
-  "scripts": {
-    "lint": "prettier '{src,tests,.}/*.{js,json}' --write",
-    "test": "jest"
-  }
+    "name": "prettier-reasonml",
+    "version": "0.1.0",
+    "main": "src",
+    "license": "MIT",
+    "keywords": [
+        "reasonml",
+        "refmt",
+        "prettier",
+        "prettier-plugin"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "jest": "^23.6.0",
+        "prettier": "^1.15.3",
+        "reason": "^3.3.4"
+    },
+    "scripts": {
+        "lint": "prettier '{src,tests,.}/*.{js,json}' --write",
+        "test": "jest"
+    }
 }
