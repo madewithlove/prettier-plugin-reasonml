@@ -3,7 +3,7 @@
   src="https://cdn.rawgit.com/prettier/prettier-logo/master/images/prettier-icon-light.svg">&nbsp;&nbsp;
   &nbsp;&nbsp;<img alt="Elm"
   height="210"
-  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Elm_logo.svg/1024px-Elm_logo.svg.png">&nbsp;&nbsp;
+  src="https://reasonml.github.io/img/reason.svg">&nbsp;&nbsp;
 </p>
 
 # Prettier ReasonML plugin
