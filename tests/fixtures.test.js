@@ -10,26 +10,24 @@ files.forEach(sourceFileName => {
         if (sourceFileName.includes("after")) {
             return;
         }
-        const formattedFileName = sourceFileName.replace("before", "after");
+
         const sourceFilePath = path.resolve(fixturesDirName, sourceFileName);
         const formattedFilePath = path.resolve(
             fixturesDirName,
-            formattedFileName
+            sourceFileName.replace("before", "after")
         );
-        const formattedFileExists = fs.existsSync(formattedFilePath);
 
         const sourceText = fs.readFileSync(sourceFilePath, "utf8");
-        const expectedFormattedText = formattedFileExists
-            ? fs.readFileSync(formattedFilePath, "utf8")
-            : sourceText;
+        const expectedFormattedText = fs.readFileSync(
+            formattedFilePath,
+            "utf8"
+        );
 
         let actualResult;
         try {
             actualResult = prettier.format(sourceText, {
                 filepath: sourceFilePath,
-                plugins: [path.resolve(__dirname, "..")],
-                printWidth: 120,
-                tabWidth: 4
+                plugins: [path.resolve(__dirname, "..")]
             });
         } catch (e) {
             actualResult = sourceText;

@@ -1,11 +1,19 @@
-const { format } = require("./utils");
+const { sync } = require("execa");
 
-module.exports = function parse(text, parsers, opts) {
-    return {
-        ast_type: "refmt",
-        body: format(text),
-        end: text.length,
-        source: text,
-        start: 0
-    };
-};
+const format = (text, options) =>
+    sync("refmt", ["--print-width=" + options.printWidth], {
+        input: text,
+        preferLocal: true,
+        localDir: __dirname,
+        stripEof: false
+    }).stdout;
+
+const parse = (text, parsers, opts) => ({
+    ast_type: "refmt",
+    body: format(text, opts),
+    end: text.length,
+    source: text,
+    start: 0
+});
+
+module.exports = parse;
