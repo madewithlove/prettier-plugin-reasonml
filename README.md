@@ -12,8 +12,8 @@ Wrapper plugin adding `refmt` support to Prettier. This brings `*.re` files supp
 
 ## Installation
 
-```shell
-npm install prettier prettier-plugin-reasonml -g
+```bash
+npm install prettier prettier-plugin-reasonml -g # or
 yarn global add prettier prettier-plugin-reasonml
 ```
 
@@ -21,7 +21,7 @@ yarn global add prettier prettier-plugin-reasonml
 
 All you need to do is use Prettier on ReasonML files like you would any other files:
 
-```shell
+```bash
 prettier src/**/*.re --write --print-width 120
 ```
 
