@@ -8,7 +8,7 @@
 
 # Prettier ReasonML plugin
 
-Wrapper plugin adding `refmt` support to Prettier. This brings `*.re` files support to Prettier and allow you to format those files like you would the rest of your codebase, while also inheriting the configured Prettier options. This follows the same model as the [Elm plugin](https://github.com/gicentre/prettier-plugin-elm) in that the code to format is passed directly to `refmt` and isn't transformed into an AST, the goal of this package is to simply integrate refmt more smoothly into your workflow if you already use Prettier.
+Wrapper plugin adding `refmt` support to Prettier. This brings `*.re` files support to Prettier and allows you to format those files like you would the rest of your codebase, while also inheriting the configured Prettier options. This follows the same model as the [Elm plugin](https://github.com/gicentre/prettier-plugin-elm) in that the code to format is passed directly to `refmt` and isn't transformed into an AST, the goal of this package is to simply integrate refmt more smoothly into your workflow if you already use Prettier.
 
 ## Installation
 
