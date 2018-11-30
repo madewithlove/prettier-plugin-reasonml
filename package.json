@@ -15,6 +15,9 @@
         "prettier": "^1.15.3",
         "reason": "^3.3.4"
     },
+    "peerDependencies": {
+        "prettier": "^1.11.0"
+    },
     "scripts": {
         "lint": "prettier '{src,tests,.}/*.{js,json}' --write",
         "test": "jest"
