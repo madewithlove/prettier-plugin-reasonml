@@ -3,6 +3,9 @@ const languages = [
         name: "ReasonML",
         parsers: ["reasonml"],
         extensions: [".re"],
+        aceMode: "text",
+        linguistLanguageId: 869538413,
+        vscodeLanguageIds: ["reason"],
     },
 ];
 
@@ -10,12 +13,6 @@ const parsers = {
     reasonml: {
         parse: require("./parse"),
         astFormat: "refmt",
-        locStart(node) {
-            return node.start;
-        },
-        locEnd(node) {
-            return node.end;
-        },
     },
 };
 
