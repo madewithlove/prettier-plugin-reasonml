@@ -13,7 +13,7 @@ const parsers = {
     reason: {
         parse: require("./parse"),
         astFormat: "refmt"
-    },
+    }
 };
 
 const printers = {
