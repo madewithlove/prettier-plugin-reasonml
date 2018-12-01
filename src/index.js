@@ -1,7 +1,7 @@
 const languages = [
     {
         name: "ReasonML",
-        parsers: ["reasonml"],
+        parsers: ["reason"],
         extensions: [".re"],
         aceMode: "text",
         linguistLanguageId: 869538413,
@@ -10,10 +10,10 @@ const languages = [
 ];
 
 const parsers = {
-    reasonml: {
+    reason: {
         parse: require("./parse"),
         astFormat: "refmt"
-    }
+    },
 };
 
 const printers = {
