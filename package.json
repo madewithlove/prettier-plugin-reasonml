@@ -10,12 +10,12 @@
         "prettier-plugin"
     ],
     "dependencies": {
-        "execa": "^1.0.0"
+        "execa": "^1.0.0",
+        "reason": "^3.3.4"
     },
     "devDependencies": {
         "jest": "^23.6.0",
-        "prettier": "^1.15.3",
-        "reason": "^3.3.4"
+        "prettier": "^1.15.3"
     },
     "scripts": {
         "lint": "prettier '{src,tests,.}/*.{js,json}' --write",
