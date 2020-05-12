@@ -27,6 +27,14 @@ prettier src/**/*.re --write --print-width 120
 
 VSCode plugin support is currently [blocked by this issue](https://github.com/prettier/prettier-vscode/issues/395).
 
+### Using other `refmt` binaries
+
+If `refmt` is not in your path or you wanted to use `bsrefmt`, set the environment variable `REFMT_BIN`
+
+```bash
+REFMT_BIN=bsrefmt prettier src/**/*.re --write --print-width 120
+```
+
 ## Credits
 
 This is largly inspired by [prettier-plugin-elm](https://github.com/gicentre/prettier-plugin-elm) so props to them.
